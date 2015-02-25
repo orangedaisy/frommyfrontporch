@@ -1,0 +1,7 @@
+# General site info
+title:       'From My Front Porch' 
+tagline:     'This is the view from my front porch.'
+description: 'Site Description, found in /_data/site-info.yml.'
+url:         http://orangedaisy.github.io
+repo:        http://github.com/orangedaisy/frommyfrontporch
+version:     1.0.0

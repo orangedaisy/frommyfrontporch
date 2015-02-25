@@ -1,0 +1,31 @@
+<div class="sidebar">
+
+  <header class="site-header">
+    <img class="profile-pic" src="">
+    <h2 class="site-author">{{ site.data.author.name }}</h2>
+    <p>{{ site.data.site-info.tagline }}</p>
+
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a class="site-nav__item" href="#" title="Link">Link</a>
+        </li>
+        <li>
+          <a class="site-nav__item" href="#" title="Link">Link</a>
+        </li>
+        <li>
+          <a class="site-nav__item" href="#" title="Link">Link</a>
+        </li>
+        <li>
+          <a class="site-nav__item" href="#" title="Link">Link</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <footer class="site-footer">
+    &copy; {{ site.time | date: '%Y' }} {{ site.data.site-info.title }}
+  </footer>
+
+</div>
