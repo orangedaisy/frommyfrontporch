@@ -1,0 +1,15 @@
+// ----------
+//
+// functions
+//
+// Project functions. Please keep variables in '_variables.scss'
+// and mixins in '_mixins.scss'
+//
+// ----------
+
+// color retrieval function
+@function palette($color) {
+
+  @return map-get($p-pastel,$color);
+
+}
