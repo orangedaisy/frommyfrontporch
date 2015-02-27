@@ -1,12 +1,18 @@
 ---
 ---
 
-@import "vendor/normalize";
 @import "vendor/bourbon/bourbon";
 @import "vendor/elf";
-@import "vendor/syntax-highlighting";
 
 @import "helpers/variables";
 @import "helpers/functions";
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@import "vendor/normalize";
+@import "vendor/syntax-highlighting";
 @import "global";

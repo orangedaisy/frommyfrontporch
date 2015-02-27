@@ -8,4 +8,15 @@
 
 html {
   background: $c-white;
+  color: $c-grey;
+  font-family: $f-sans;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font: {
+    family: $f-brand;
+    weight: 400;
+  }
 }
