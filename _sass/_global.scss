@@ -14,9 +14,6 @@ html {
   overflow-y: scroll;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font: {
-    family: $f-brand;
-    weight: 400;
-  }
+main {
+  margin-left: 20rem;
 }

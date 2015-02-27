@@ -1,0 +1,39 @@
+// ----------
+//
+// sidebar
+//
+// Styles for the site-wide sidebar and some of its components
+//
+// ----------
+
+.site-sidebar {
+  width: 20rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.author-card {
+  padding: 1rem;
+
+  .profile-pic {
+    border-radius: 50%;
+    display: block;
+    height: modular-scale(1rem,5,1.5);
+    margin: 0 auto;
+    width: modular-scale(1rem,5,1.5);
+  }
+
+  .site-author {
+    margin: 1rem auto;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.site-footer {
+  padding: 1rem;
+}
