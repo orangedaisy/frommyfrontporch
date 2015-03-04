@@ -7,6 +7,7 @@
 // ----------
 
 .site-sidebar {
+  border-right: 1px solid shade($c-white,10%);
   width: 20rem;
   position: fixed;
   top: 0;
