@@ -10,16 +10,17 @@
 // colors
 //    individual colors receive a '$c-' prefix.
 //    palettes of colors receive a '$p-' prefix.
-$p-pastel: ( // main color palette
-  teal:        #56a3a6,
-  green:       #a8f0b8,
-  yellow:      #f7fe72,
-  dark-purple: #4a4063,
-  purple:      #ada6d5
-);
-
 $c-white: #fafafa;
 $c-grey:  #404040;
+
+$p-pastel: ( // main color palette
+  green:       #a8f0b8,
+  pink:        #ff82ac,
+  purple:      #ada6d5,
+  purple-dark: #4a4063,
+  teal:        #56a3a6,
+  yellow:      #f7fe72
+);
 
 // fonts
 $f-brand: "Shadows Into Light Two", cursive;
