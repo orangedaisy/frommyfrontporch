@@ -1,33 +1,9 @@
-<div class="site-sidebar">
+<div class="c-site-sidebar">
 
-  <header class="site-header">
-    <div class="author-card">
-      <img class="profile-pic" src="{{ site.baseurl }}/assets/img/stephanie.jpg" title="Stephanie">
-      <h2 class="site-author">{{ site.data.author.name }}</h2>
-      <p>{{ site.data.site-info.tagline }}</p>
-    </div>
-
-    <nav class="site-nav">
-      <ul>
-        <li>
-          <a class="site-nav__item" href="#" title="Link">Link</a>
-        </li>
-        <li>
-          <a class="site-nav__item" href="#" title="Link">Link</a>
-        </li>
-        <li>
-          <a class="site-nav__item" href="#" title="Link">Link</a>
-        </li>
-        <li>
-          <a class="site-nav__item" href="#" title="Link">Link</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <footer class="site-footer">
-    &copy; {{ site.time | date: '%Y' }} {{ site.data.site-info.title }}
-  </footer>
+  <div class="o-author-card">
+    <img class="o-author-card__pic" src="{{ site.baseurl }}/assets/img/stephanie.jpg" title="Stephanie">
+    <h2 class="o-author-card__name">{{ site.data.author.name }}</h2>
+    <p class="o-author-card__tagline">{{ site.data.site-info.tagline }}</p>
+  </div>
 
 </div>
