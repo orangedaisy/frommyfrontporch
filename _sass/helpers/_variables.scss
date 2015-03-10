@@ -11,7 +11,7 @@
 //    individual colors receive a '$c-' prefix.
 //    palettes of colors receive a '$p-' prefix.
 $c-white: #fafafa;
-$c-grey:  #404040;
+$c-black:  #404040;
 
 $p-pastel: ( // main color palette
   green:       #a8f0b8,
@@ -27,4 +27,4 @@ $f-brand: "Shadows Into Light Two", cursive;
 $f-sans: "Open Sans", sans-serif;
 
 // images
-$i-header: "/assets/img/fmfp-header.jpg";
+$i-header: url("/assets/img/fmfp-header.jpg");

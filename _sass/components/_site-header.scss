@@ -1,0 +1,38 @@
+// ----------
+//
+// site-header
+//
+// styles for our site-wide header
+//
+// ----------
+
+.c-site-header {
+  margin: 0;
+  padding: 0;
+}
+
+.c-site-title {
+  background:
+    //gradient
+    linear-gradient(
+      to bottom,
+      rgba($c-black,.75),
+      rgba($c-black,.55)
+    ),
+    //image
+    $i-header no-repeat center -3.375em fixed;
+  background-size: cover;
+  color: $c-white;
+  font: {
+    family: $f-brand;
+    size: modular-scale(1vw,4,1.5);
+    weight: 400;
+  }
+  line-height: 1.1;
+  padding: modular-scale(1vw,6,1.5) 0;
+  margin: 0 auto;
+  text: {
+    align: center;
+    transform: capitalize;
+  }
+}
