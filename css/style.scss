@@ -22,9 +22,7 @@
 @import "objects/social-media";
 
 //components
-@import "components/top-bar";
-@import "components/site-header";
-@import "components/site-nav";
-
-//layouts
-@import "layouts/sidebar";
+@import "components/c-top-bar";
+@import "components/c-site-header";
+@import "components/c-site-nav";
+@import "components/c-sidebar";

@@ -12,16 +12,36 @@
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 0;
+    padding: 1.6rem 0 1.2rem;
     text-align: center;
   }
 
   li {
     display: inline-block;
+    margin: 0 1rem;
   }
 }
 
 .c-site-nav__item {
-  color: green;
+  border-bottom: 2px dotted transparent;
+  color: palette(pink);
+  font: {
+    family: $f-brand;
+    size: 1.5em;
+  }
+  line-height: 1;
+  padding: 0 .5rem;
+  text-decoration: none;
+
+  &:hover,&:focus {
+    border-bottom-color: palette(pink);
+  }
+  &:active {
+    border-bottom: {
+      color: shade(palette(pink),8%);
+      style: solid;
+    }
+    color: shade(palette(pink),8%);
+  }
 }
