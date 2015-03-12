@@ -7,7 +7,7 @@
 @import "helpers/variables";
 // we have to declare our image variable here so that
 // it can properly use Jekyll's path names
-$i-header: url("{{ site.baseurl }}assets/img/fmfp-header.jpg");
+$i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 @import "helpers/functions";
 
 *,
