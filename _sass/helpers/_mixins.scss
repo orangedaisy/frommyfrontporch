@@ -1,0 +1,16 @@
+// ----------
+//
+// mixins
+//
+// Project mixins. Please keep functions in '_functions.scss'
+// and variables in '_variables.scss'
+//
+// ----------
+
+@mixin bp($breakpoint) {
+
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+
+}

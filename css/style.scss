@@ -9,6 +9,7 @@
 // it can properly use Jekyll's path names
 $i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 @import "helpers/functions";
+@import "helpers/mixins";
 
 *,
 *:before,
@@ -28,4 +29,5 @@ $i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 @import "components/c-top-bar";
 @import "components/c-site-header";
 @import "components/c-site-nav";
+@import "components/c-site-content";
 @import "components/c-sidebar";

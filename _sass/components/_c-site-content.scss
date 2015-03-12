@@ -1,0 +1,15 @@
+// ----------
+//
+// site-content
+//
+// Styles for our site-content containter
+//
+// ----------
+
+.c-site-content {
+
+  @include bp($bp-beta) {
+    @include column(2/3);
+  }
+
+}

@@ -13,3 +13,7 @@ html {
   line-height: 1.5;
   overflow-y: scroll;
 }
+
+main {
+  @include clearfix;
+}
