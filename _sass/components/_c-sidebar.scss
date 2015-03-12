@@ -7,8 +7,9 @@
 // ----------
 
 .c-site-sidebar {
-  border-right: 1px solid shade($c-white,10%);
-  width: 20rem;
+  @include bp($bp-beta) {
+    @include column(1/3);
+  }
 }
 
 .author-card {
