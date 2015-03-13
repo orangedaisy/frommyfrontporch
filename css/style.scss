@@ -1,8 +1,12 @@
 ---
 ---
-
+// third party tools
 @import "vendor/bourbon/bourbon";
 @import "vendor/elf";
+// why the break in vendor @imports? both 'normalize' and
+// 'syntax-highlighting' include real css. we want to
+// keep them separate from files that are only used to
+// write source and don't show up in the compiled files
 
 @import "helpers/variables";
 // we have to declare our image variable here so that
@@ -11,23 +15,29 @@ $i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 @import "helpers/functions";
 @import "helpers/mixins";
 
+// globally set 'box-sizing' to 'border-box'
+// we call this here because normalize.scss sets some
+// elements to use 'box-sizing: content-box' and we
+// don't want to interfere with that
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
+// more third party tools
 @import "vendor/normalize";
 @import "vendor/syntax-highlighting";
 
+// our global styles
 @import "global";
 
-//objects
-@import "objects/social-media";
+// objects
+@import "objects/o-top-bar";
+@import "objects/o-site-header";
+@import "objects/o-site-nav";
+@import "objects/o-site-content";
+@import "objects/o-site-sidebar";
 
-//components
-@import "components/c-top-bar";
-@import "components/c-site-header";
-@import "components/c-site-nav";
-@import "components/c-site-content";
-@import "components/c-sidebar";
+// components
+@import "components/c-social-media";

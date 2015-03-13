@@ -6,7 +6,7 @@
 //
 // ----------
 
-.c-site-nav {
+.o-site-nav {
   background: shade($c-white,2%);
   border-bottom: 1px solid shade($c-white,5%);
 
@@ -23,7 +23,7 @@
   }
 }
 
-.c-site-nav__item {
+.o-site-nav__item {
   border-bottom: 2px dotted transparent;
   color: palette(pink);
   font: {

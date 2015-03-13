@@ -2,20 +2,20 @@
 //
 // sidebar
 //
-// Styles for the site-wide sidebar and some of its components
+// Styles for the site-wide sidebar
 //
 // ----------
 
-.c-site-sidebar {
+.o-site-sidebar {
   @include bp($bp-beta) {
     @include column(1/3);
   }
 }
 
-.author-card {
+.c-author-card {
   padding: 1rem;
 
-  .profile-pic {
+  .c-author-card__pic {
     border-radius: 50%;
     display: block;
     height: modular-scale(1rem,5,1.5);
@@ -23,15 +23,11 @@
     width: modular-scale(1rem,5,1.5);
   }
 
-  .site-author {
+  .c-author-card__name {
     margin: 1rem auto;
   }
 
-  p {
+  .c-author-card__description {
     margin-top: 0;
   }
-}
-
-.site-footer {
-  padding: 1rem;
 }
