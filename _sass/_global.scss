@@ -16,6 +16,8 @@ html {
 
 main {
   margin: 0 auto;
-  max-width: 75vw;
+  max-width: 72em;
+  padding: 0 1rem;
+
   @include clearfix;
 }
