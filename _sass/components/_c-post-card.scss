@@ -28,6 +28,17 @@
   a {
     color: palette(teal);
     text-decoration: none;
+
+    &:hover,&:focus {
+      border-bottom: 2px dashed palette(teal);
+    }
+    &:active {
+      border-bottom: {
+        color: shade(palette(teal),8%);
+        style: solid;
+      }
+      color: shade(palette(teal),8%);
+    }
   }
 }
 
