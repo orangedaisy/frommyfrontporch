@@ -19,7 +19,7 @@
       rgba($c-black,.55)
     ),
     //image
-    $i-header no-repeat center -2.75em fixed;
+    $i-header no-repeat center -3.375em fixed;
   background-size: cover;
   color: $c-white;
   font: {
@@ -28,7 +28,7 @@
     weight: 400;
   }
   line-height: 1.1;
-  padding: modular-scale(1vw,6,1.5) 0;
+  padding: modular-scale(1vw,5,1.5) 0;
   margin: 0 auto;
   text: {
     align: center;
