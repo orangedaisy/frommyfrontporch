@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<ul class="c-post-list">
+<ul class="o-post-list">
   {% for post in site.posts %}
-    <li class="o-post-card">
+    <li class="c-post-card">
 
-      <h2 class="o-post-card__title">
+      <h2 class="c-post-card__title">
         <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
       </h2>
 
-      <span class="o-post-card__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="c-post-card__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
     </li>
   {% endfor %}
