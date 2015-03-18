@@ -1,26 +1,31 @@
 // ----------
 //
-// post-card
+// card
 //
-// Post card container. This is used in our post-list
-// to show the post title, meta-data, description,
-// and 'read more' link
+// Main component for our 'card' ui. Currently there are
+// two types of cards: '--post' and '--bio'.
+//
+// All elements and modifiers of the 'card' block belong
+// in this file.
 //
 // ----------
 
-.c-post-card {
+.c-card {
   background: shade($c-white,2%);
   border: 1px solid shade($c-white,10%);
-  border-radius: 4px;
-  box-shadow: 0 3px 0 palette(teal);
+  border-radius: 3px;
   padding: 1rem 1.5rem;
 
-  & + & {
-    margin-top: 2.25rem;
+  &--post { //.c-card--post
+    box-shadow: 0 3px 0 palette(teal);
+
+    & + & { //.c-card--post + .c-card--post
+      margin-top: 2.25rem;
+    }
   }
 }
 
-.c-post-card__title {
+.c-card__title {
   font: {
     family: $f-brand;
     size: modular-scale(1em,3,1.25);
@@ -45,13 +50,13 @@
   }
 }
 
-.c-post-card__meta {
+.c-card__meta {
   font: {
     size: 85%;
     style: italic;
   }
 }
 
-.c-post-card__excerpt {
+.c-card__excerpt {
   margin-bottom: 0;
 }
