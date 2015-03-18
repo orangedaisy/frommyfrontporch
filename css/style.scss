@@ -36,10 +36,10 @@ $i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 @import "objects/o-top-bar";
 @import "objects/o-site-header";
 @import "objects/o-site-nav";
-@import "objects/o-site-content";
+@import "objects/o-page-content";
 @import "objects/o-site-sidebar";
 @import "objects/o-post-list";
 
 // components
 @import "components/c-social-media";
-@import "components/c-post-card";
+@import "components/c-card";

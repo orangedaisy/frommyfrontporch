@@ -1,12 +1,13 @@
 // ----------
 //
-// site-content
+// page-content
 //
-// Styles for our site-content containter
+// Styles for our page-content containter
 //
 // ----------
 
-.o-site-content {
+.o-page-content {
+  margin-top: 1.5rem;
 
   @include bp($bp-beta) {
     @include column(2/3);

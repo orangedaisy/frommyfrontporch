@@ -23,6 +23,10 @@
       margin-top: 2.25rem;
     }
   }
+
+  &--bio { //.c-card--author
+    //bio-card styles, if needed
+  }
 }
 
 .c-card__title {
@@ -57,6 +61,22 @@
   }
 }
 
-.c-card__excerpt {
-  margin-bottom: 0;
+.c-card__text {
+  margin: 1rem auto 0;
+}
+
+.c-card__name {
+  font: {
+    family: $f-brand;
+    weight: 400;
+  }
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+.c-card__img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 75%;
 }
