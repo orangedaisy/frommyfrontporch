@@ -43,3 +43,4 @@ $i-header: url("{{ "/assets/img/fmfp-header.jpg" | prepend: site.baseurl }}");
 // components
 @import "components/c-social-media";
 @import "components/c-card";
+@import "components/c-post";

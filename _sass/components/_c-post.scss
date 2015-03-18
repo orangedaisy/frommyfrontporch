@@ -1,0 +1,38 @@
+// ----------
+//
+// post
+//
+// Our main 'post' component. This partial includes styling
+// for all the elements that live outside of the actual
+// markdown content.
+//
+// For the partial that affects markdown content, head
+// over to 's-post'.
+//
+// ----------
+
+.c-post {
+  background: shade($c-white,2%);
+  border: 1px solid shade($c-white,10%);
+  border-radius: 3px;
+  box-shadow: 0 3px 0 palette(teal); 
+  padding: 1rem 1.5rem;
+}
+
+.c-post__title {
+  color: palette(teal);
+  font: {
+    family: $f-brand;
+    size: modular-scale(1em,2,1.5);
+    weight: 400;
+  }
+  margin: 0 auto;
+}
+
+.c-post__meta {
+  font: {
+    size: 85%;
+    style: italic;
+  }
+  margin: .5rem auto;
+}
