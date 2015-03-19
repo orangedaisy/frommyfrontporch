@@ -1,0 +1,26 @@
+<!-- meta tags for displaying content on social media -->
+<meta property="og:site_name" content="{{ site.baseurl }}" />
+<div class="hrecipe">
+  <h1 class="fn">{{ page.title }}</h1>
+  <p class="summary">{{ page.description }}</p>
+  <img class="photo" src="{{ site.baseurl }}{{ page.image.url }}" alt="{{ page.image.alt }}" />
+  Ingredients:
+  <ul>
+    {% for item in page.ingredients %}
+      <li class="ingredient">{{ item }}</li>
+    {% endfor %}
+  </ul>
+  Instructions:
+  <ul class="instructions">
+    {% for item in page.instructions %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  <span class="yield">{{ page.yield }}</span>
+  <p>Preparation time:
+  <span class="preptime"><span class="value-title" title="{{ page.time.prep }}"></span>{{ page.time.prep }}</span>
+  </p>
+  <p>Total time:
+  <span class="duration"><span class="value-title" title="{{ page.time.total }}"></span>{{ page.time.total }}</span>
+  </p>
+</div>
