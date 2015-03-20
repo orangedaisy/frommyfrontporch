@@ -81,6 +81,19 @@ task :post, :title do |t, args|
   create_file(POSTS, filename, content, title, editor)
 end
 
+# rake recipe["Title"]
+desc "Create a recipe in _posts"
+task :recipe, :title do |t, args|
+  title = args[:title]
+  template = CONFIG["recipe"]["template"]
+  extension = CONFIG["recipe"]["extension"]
+  editor = CONFIG["editor"]
+  check_title(title)
+  filename = "#{DATE}-#{transform_to_slug(title, extension)}"
+  content = read_file(template)
+  create_file(POSTS, filename, content, title, editor)
+end
+
 # rake draft["Title"]
 desc "Create a post in _drafts"
 task :draft, :title do |t, args|

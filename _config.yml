@@ -23,6 +23,9 @@ post:
 page:
   template:  templates/_page.txt
   extension: md
+recipe:
+  template:  templates/_recipe.txt
+  extension: html
 editor: vim
 
 # Sass settings
