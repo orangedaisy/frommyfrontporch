@@ -1,26 +1,31 @@
 ---
-# ==========
+# ===========
 # Recipe Post
-# ==========
+# ===========
 
 category: recipe
 layout: recipe
 
-# Enter all of your recipe data here.
+# Enter your recipe data here.
+# Wrap _all_ of your values in "quotes".
+
+# Note that the 'title' key is automatically filled
+# in when you run 'rake recipe["Title"]' from
+# the command line.
 
 title:
-description:
+description: # EDIT HERE
 image:
   url: # EDIT HERE
   alt: # EDIT HERE
 time:
   prep:
-    iso:  # EDIT HERE // in 'iso' time, 10M = 10 minutes
+    iso:  # EDIT HERE // in 'iso' time, 10 minutes = 10M
     real: # EDIT HERE // in 'real' time, 10 minutes = 10 minutes
   total:
-    iso:  # EDIT HERE // in 'iso' time, 10M = 10 minutes
+    iso:  # EDIT HERE // in 'iso' time, 10 minutes = 10M
     real: # EDIT HERE // in 'real' time, 10 minutes = 10 minutes
-yield: # EDIT HERE
+yield: # EDIT HERE // integers only, 'Serves:' is already given below.
 ingredients:
   - # EDIT HERE
   - # EDIT HERE
