@@ -1,0 +1,103 @@
+---
+# ===========
+# Recipe Post
+# ===========
+
+category: recipe
+layout: recipe
+
+# Enter your recipe data here.
+# Wrap _all_ of your values in "quotes".
+
+# Note that the 'title' key is automatically filled
+# in when you run 'rake recipe["Title"]' from
+# the command line.
+
+title: "Stephanie's Summer Pasta Salad"
+description: "Light side dish with a kick. Perfect for summer cookouts."
+story: >
+  ## Story of this recipe:
+
+  I love making this on summer afternoons.
+
+
+  Today, we:
+
+    - as;dljfasldkf
+    - asldfjasldkfj
+    - asdlkfasldkfjasd
+
+
+  ![Stephanie](/assets/img/stephanie.jpg)
+
+
+  What's your favorite twist on a pasta salad?
+image:
+  url: "/assets/img/stephanie.jpg"
+  alt: Stephanie
+time:
+  prep:
+    iso:  "5M"# EDIT HERE // in 'iso' time, 10 minutes = 10M
+    real: "5 minutes"# EDIT HERE // in 'real' time, 10 minutes = 10 minutes
+  total:
+    iso:  "5M"# EDIT HERE // in 'iso' time, 10 minutes = 10M
+    real: "5 minutes"# EDIT HERE // in 'real' time, 10 minutes = 10 minutes
+yield: 12 # EDIT HERE // integers only, 'Serves:' is already given below.
+ingredients:
+  - "1/2 lb. pasta"
+  - "1/3 bell pepper, diced"
+  - "1/3 white onion, diced"
+  - "5 strips bacon, cooked and diced"
+  - "6 jalapenos, pickled and diced"
+  - "1/3 c. mayo"
+  - "2 tbsp brown mustard"
+  - "1 tsp apple cider vinegar"
+  - "1 tsp olive oil"
+  - "2 tsp sugar"
+  - "salt and pepper, to taste"
+instructions:
+  - "Boil pasta in salted water until fully cooked. Drain and rinse in cold running water until chilled."
+  - "In a large mixing bowl, add onion, bell pepper, bacon, jalapenos, and cooked pasta."
+  - "In a small bowl, combine mayo, brown mustard, apple cider vinegar, olive oil, sugar, salt, and pepper."
+  - "Add dressing to the pasta mixture a little at a time, until dressed to your liking."
+---
+
+<div itemscope itemtype="http://schema.org/Recipe">
+
+  <h1 class="c-post__title" itemprop="name">{{ page.title }}</h1>
+  <div class="c-post__meta">
+    <span class="c-post__meta__item">
+      <meta itemprop="prepTime" content="PT{{ page.time.prep.iso }}">
+      Prep time: {{ page.time.prep.real }}
+    </span>
+    <span class="c-post__meta__item">
+      <meta itemprop="totalTime" content="PT{{ page.time.total.iso }}">
+      Total time: {{ page.time.total.real }}
+    </span>
+    <span class="c-post__meta__item" itemprop="recipeYield">
+      Serves {{ page.yield }}
+    </span>
+  </div>
+  <p itemprop="description">{{ page.description }}</p>
+
+  <meta itemprop="url" content="{{ page.url }}">
+
+  <img itemprop="image" src="{{ page.image.url }}" alt="{{ page.image.alt }}">
+
+  <h3>Ingredients</h3>
+  <ul>
+    {% for item in page.ingredients %}
+      <li itemprop="ingredients">{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+  {{ page.story | markdownify }}
+
+  <h3>Instructions</h3>
+  <ul itemprop="recipeInstructions">
+    {% for item in page.instructions %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+</div>
