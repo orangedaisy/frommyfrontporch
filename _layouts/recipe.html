@@ -50,14 +50,14 @@ layout: default
   <img class="u-hidden" itemprop="image" src="{{ page.image.url }}" alt="{{ page.image.alt }}">
   <p class="u-hidden" itemprop="description">{{ page.description }}</p>
 
-  <h3>Ingredients</h3>
+  <h6>Ingredients</h6>
   <ul>
     {% for item in page.ingredients %}
       <li itemprop="ingredients">{{ item }}</li>
     {% endfor %}
   </ul>
 
-  <h3>Instructions</h3>
+  <h6>Instructions</h6>
   <ul itemprop="recipeInstructions">
     {% for item in page.instructions %}
       <li>{{ item }}</li>
