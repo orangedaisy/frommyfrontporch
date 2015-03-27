@@ -1,0 +1,14 @@
+// ----------
+//
+// utilities
+//
+// These classes are single-responsibility ONLY!
+// If you need a class to do more than one thing,
+// it should (except in those weird blue-unicorn
+// scenarios) be split into two classes.
+//
+// ----------
+
+.u-hidden {
+  display: none;
+}
