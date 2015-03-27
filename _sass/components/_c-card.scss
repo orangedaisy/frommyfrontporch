@@ -27,6 +27,10 @@
   &--bio { //.c-card--author
     //bio-card styles, if needed
   }
+
+  &--recipe { //.c-card--recipe
+    margin-top: modular-scale(1rem,4,1.5);
+  }
 }
 
 .c-card__title {
@@ -36,6 +40,31 @@
     weight: 400;
   }
   margin: 0 auto;
+
+  &--recipe { //.c-card__title--recipe
+    // this header creates the 'tab' above our
+    // printable recipe cards
+    background: shade($c-white,2%);
+    border: {
+      top: 1px solid shade($c-white,10%);
+      right: 1px solid shade($c-white,10%);
+      bottom: 3px solid shade($c-white,2%);
+      left: 1px solid shade($c-white,10%);
+    }
+    border-radius: 3px 3px 0 0;
+    font: {
+      family: $f-sans;
+      size: modular-scale(1em,1,1.25);
+      weight: 700;
+    }
+    margin: -3.75rem auto 0;
+    padding: .5rem 1.5rem .25rem;
+
+    @include bp($bp-alpha) {
+      margin-left: 0;
+      max-width: 48%;
+    }
+  }
 
   a {
     color: palette(teal);
@@ -60,6 +89,10 @@
     style: italic;
   }
   margin: .5rem auto;
+
+  &--recipe {
+    margin-top: 1rem;
+  }
 }
 
 .c-card__text {
