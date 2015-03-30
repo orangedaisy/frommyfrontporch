@@ -27,9 +27,20 @@
   &--bio { //.c-card--author
     //bio-card styles, if needed
   }
+}
 
-  &--recipe { //.c-card--recipe
-    margin-top: modular-scale(1rem,4,1.5);
+.c-card--recipe {
+  margin-top: modular-scale(1rem,4,1.5);
+
+  h6:not(.c-card__title--recipe) {
+    font-size: 1em;
+    margin: 1rem auto .5rem 0;
+  }
+
+  ul {
+    list-style-type: square;
+    margin: 0 auto;
+    padding: 0 0 0 1rem;
   }
 }
 
