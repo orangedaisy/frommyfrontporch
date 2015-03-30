@@ -1,0 +1,15 @@
+// ----------
+//
+// site-footer
+//
+// Styles for our site-wide footer
+//
+// ----------
+
+.o-site-footer {
+  background: $c-black;
+  border-top: 1px solid shade($c-black,5%);
+  color: $c-white;
+  margin-top: modular-scale(1rem,3,1.5);
+  padding: 1rem 1.5rem;
+}
