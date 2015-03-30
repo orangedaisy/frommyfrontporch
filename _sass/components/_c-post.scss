@@ -16,7 +16,11 @@
   border: 1px solid shade($c-white,10%);
   border-radius: 3px;
   box-shadow: 0 3px 0 palette(teal); 
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
+
+  @include bp($bp-alpha) {
+    padding: 1.5rem 2rem;
+  }
 }
 
 .c-post__title {

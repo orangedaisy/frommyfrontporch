@@ -15,7 +15,11 @@
   background: $c-white;
   border: 1px solid shade($c-white,10%);
   border-radius: 3px;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
+
+  @include bp($bp-alpha) {
+    padding: 1.5rem 2rem;
+  }
 
   &--post { //.c-card--post
     box-shadow: 0 3px 0 palette(teal);
@@ -69,12 +73,13 @@
       size: modular-scale(1em,1,1.25);
       weight: 700;
     }
-    margin: -4rem auto 0;
-    padding: .5rem 1.5rem 0;
+    margin: -3.75rem auto 0;
+    padding: .5rem 1.5rem .25rem;
 
     @include bp($bp-alpha) {
-      margin-left: 0;
+      margin: -4rem auto 0 0;
       max-width: 48%;
+      padding: .5rem 1.5rem 0;
     }
   }
 
