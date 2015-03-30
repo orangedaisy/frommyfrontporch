@@ -11,7 +11,8 @@
 // ----------
 
 .c-card {
-  background: shade($c-white,2%);
+  //background: shade($c-white,2%);
+  background: $c-white;
   border: 1px solid shade($c-white,10%);
   border-radius: 3px;
   padding: 1rem 1.5rem;
@@ -55,11 +56,11 @@
   &--recipe { //.c-card__title--recipe
     // this header creates the 'tab' above our
     // printable recipe cards
-    background: shade($c-white,2%);
+    background: $c-white;
     border: {
       top: 1px solid shade($c-white,10%);
       right: 1px solid shade($c-white,10%);
-      bottom: 3px solid shade($c-white,2%);
+      bottom: 3px solid $c-white;
       left: 1px solid shade($c-white,10%);
     }
     border-radius: 3px 3px 0 0;

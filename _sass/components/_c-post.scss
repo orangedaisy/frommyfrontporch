@@ -12,7 +12,7 @@
 // ----------
 
 .c-post {
-  background: shade($c-white,2%);
+  background: $c-white;
   border: 1px solid shade($c-white,10%);
   border-radius: 3px;
   box-shadow: 0 3px 0 palette(teal); 
